@@ -5,7 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class DiretivaIfService {
 
-  minhaVariavels: any = 'HelloWord';
 
   constructor() { }
+
+  cursos(){
+    return  ['Angular','Java','JavaScript','NodeJs'];
+  }
 }

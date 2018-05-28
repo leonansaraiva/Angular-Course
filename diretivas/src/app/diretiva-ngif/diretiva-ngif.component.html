@@ -1,3 +1,14 @@
-<p>
-  diretiva-ngif works!
-</p>
+
+<h5 class="alert alert-primary" role="alert" style="text-align: center">*NGiF</h5>
+
+<div class="alert alert-light" role="alert" style="text-align: center" *ngIf="diretivaIfService.cursos().length > 0">Lista de cursos</div>
+<div class="alert alert-light" role="alert" style="text-align: center" *ngIf="diretivaIfService.cursos().length == 0 ">Não existe lista de cursos</div>
+
+<div class="alert alert-light" role="alert" style="text-align: center" *ngIf="mostrarCursos == true; else semCursos">Lista de cursos</div>
+
+<ng-template  #semCursos> 
+  <div class="alert alert-light" role="alert" style="text-align: center" >Não existe lista de cursos</div>
+</ng-template>
+
+<br>
+<button (click)="onMostrarCursos()">Mostras ou Esconder cursos</button>
