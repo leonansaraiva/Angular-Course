@@ -1,4 +1,4 @@
-<h5> Criar Cursos</h5>
+<h5> Criar Cursos2</h5>
 
 <ul>
   <li *ngFor = "let curso of cursos">
@@ -6,3 +6,8 @@
   </li>
 
 </ul>
+
+<input type="text" #inPutCurso>
+<button (click)="onAddCurso(inPutCurso.value)"> Criar Cruso</button>
+
+<app-receber-curso-criado></app-receber-curso-criado>
