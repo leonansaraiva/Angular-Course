@@ -19,6 +19,10 @@ export class ExemplosPipesComponent implements OnInit {
   livros: string[] = ['Java','Angular 4'];
   filtro: string;
 
+  valorAsync = new Promise ((resolve, reject) => {
+    setTimeout (()=> resolve('Valor assíncrono'), 2000)
+  });
+
   constructor() { }
 
   ngOnInit() {
