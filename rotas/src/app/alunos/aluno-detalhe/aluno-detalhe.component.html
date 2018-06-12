@@ -1,3 +1,22 @@
-<p>
-  aluno-detalhe works!
-</p>
+<h5>Detalhes do Aluno</h5>
+
+<table>
+    <thead>
+      <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Email</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr >
+        <td>{{aluno?.id}}</td>
+        <td>{{aluno?.nome}}</td>
+        <td>{{aluno?.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a class="waves-effect waves-light btn"
+  (click)="editarAluno()">Editar</a>

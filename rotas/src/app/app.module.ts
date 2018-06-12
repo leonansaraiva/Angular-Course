@@ -1,8 +1,9 @@
+import { NgModule } from '@angular/core';
+
 import { CursosRoutingModule } from './cursos/cursos.routing.module';
-import { cursosModulo } from './cursos/cursos.module';
+import { CursosModule } from './cursos/cursos.module';
 import { MaterializeModule } from 'angular2-materialize';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -20,7 +21,7 @@ import { AlunosModule } from './alunos/alunos.module';
   imports: [
     BrowserModule,
     MaterializeModule,
-    cursosModulo,
+    CursosModule,
     AppRoutingModule,
     AlunosModule,
     CursosRoutingModule

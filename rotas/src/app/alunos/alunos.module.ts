@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
 
@@ -9,7 +10,8 @@ import { AlunoRoutingModule } from './aluno.routing.module';
 @NgModule({
     imports: [
         CommonModule,
-        AlunoRoutingModule
+        AlunoRoutingModule,
+        FormsModule
     ],
     declarations: [
         AlunosComponent,
